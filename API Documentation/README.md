@@ -1,1 +1,1 @@
-# Writing portfolio
+If you have experience in software development or have written for a technical audience, samples of API documentation can be a great addition. They demonstrate your ability to explain complex technical concepts in an accessible way.
