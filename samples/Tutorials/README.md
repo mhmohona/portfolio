@@ -1,0 +1,1 @@
+These are step-by-step guides that help users understand a process or how to use a particular feature. They should be clear, concise, and easy to understand.

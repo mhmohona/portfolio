@@ -1,0 +1,1 @@
+ These guides provide comprehensive information about a product, including installation, usage, troubleshooting, and FAQs. They should be well-structured and easy to navigate.

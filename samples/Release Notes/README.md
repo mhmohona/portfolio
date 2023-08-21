@@ -1,0 +1,1 @@
+Release notes provide information about the changes in the new version of a product. They can demonstrate your ability to explain complex technical changes in a concise and understandable way.

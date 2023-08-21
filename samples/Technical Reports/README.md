@@ -1,0 +1,1 @@
+These are detailed documents that explain the technology or process behind a product or feature. They should be well-researched and accurate, with clear explanations and diagrams where necessary.
