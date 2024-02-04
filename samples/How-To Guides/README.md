@@ -1,76 +1,80 @@
-# How to Create Your Own Conda Forge Package
+# How to Create a Pull Request on GitHub
 
-Ever wanted to share your awesome software with the world? Conda Forge is your go-to place! This guide walks you through the steps to package and distribute your software through Conda Forge. Don’t worry, it’s easier than it sounds, and super rewarding too!
+Creating a Pull Request (PR) on GitHub is not just for coders; it's a valuable skill for anyone looking to contribute to open-source projects or showcase their work. Whether you're a developer or writer, this guide will walk you through the process of making a PR to share your contributions with the world.
 
-## Why Conda Forge? 
+## Step 1: Fork the Original Repository
 
-[Conda Forge](https://conda-forge.org/) is like a big, welcoming library of software packages. It's community-driven and always up-to-date, and open source. If you’re dealing with software that's a bit complex, like something written in C++ or needs compiling, Conda Forge is your hero.
+1. Go to the GitHub repository you want to contribute to.
+2. Click on the 'Fork' button at the top right corner. This action creates a copy of the repository in your own GitHub account.
 
-## Ready, Set, Build!
+![Fork Repository](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/fork-repo.png)
 
-### Before You Begin:
+## Step 2: Clone Your Fork
 
-- **Conda and Pip:** Make sure you know the basics.
-- **Install Conda Build:** You’ll need this tool. Just type `conda install conda-build` in your terminal.
+1. Clone the forked repository to your local machine. This creates a local version that you can edit.
+2. Use the `git clone` command with your repository’s URL.
 
-### Creating Your Package:
-
-1. **Create a `Meta.yaml` File:** This is your recipe – it tells Conda all about your software, like what ingredients (dependencies) it needs. Need help? [Conda's documentation](https://docs.conda.io/projects/conda-build/en/latest/source/meta-yaml.html) has your back.
-
-2. **Complex Software? Use Build Scripts:** If your package is more than just Python, you might need `build.sh` (for Linux/Mac) or `bld.bat` (for Windows). This tells Conda how to build your software.
-
-3. **Build Your Package:** Here comes the most important part. With your `meta.yaml` and any necessary build scripts in place, it's time to create your Conda package. Open your terminal and run the following command:
 ```bash
-conda build package_name
+git clone https://github.com/YourUsername/repository-name.git
 ```
-Replace `package_name` with the name of your software package. This will wrap up your software in a neat little package (a tarball, technically) that can be shared.
 
-## Joining the Conda Forge Family
+## Step 3: Branch Out
 
-### How to Contribute:
+1. Before making changes, create a new branch. Branches help keep your changes organized and separate from the main project.
+2. Use the `git checkout -b <your-branch-name>` command to create a new branch and switch to it.
 
-1. **Fork Conda Forge Repo:** Go to [Conda Forge’s GitHub](https://github.com/conda-forge/staged-recipes) and fork the repository.
+```bash
+git checkout -b feature/my-contribution
+```
 
-2. **Create a New Branch:** Name it after your software.
+![Branch Out](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/create-branch.png)
 
-3. **Edit Meta.yaml File:** Modify the template to fit your software. Not sure? The template in the repo is super helpful.
+## Step 4: Make Your Contributions
 
-4. **Submit a Pull Request:** Finished? Great! Now submit a pull request to Conda Forge.
+1. Now, it’s time to add your contributions. If you're a writer, you might be adding markdown files, documents, or other formats.
+2. Place your files in the appropriate directory in your local repository.
 
-### The Waiting Game:
+![Make Contributions](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/add-contributions.png)
 
-- **CI Tests:** Your package will be tested automatically. It’s like a quality check to make sure everything’s working.
+## Step 5: Commit Your Changes
 
-- **Make Changes if Needed:** If the tests find something, just tweak your recipe and try again.
+1. After adding your work, commit these changes to your branch. This is like saving your progress.
+2. Use `git add` to stage your changes and `git commit -m "Your commit message"` to commit them.
 
-### You Made It!
+```bash
+git add .
+git commit -m "Added my writing portfolio"
+```
 
-Once your package passes all tests and gets the green light from Conda Forge mods, it’ll be added to the Conda Forge library and available on [Anaconda Cloud](https://anaconda.org/conda-forge).
+## Step 6: Push to GitHub
 
-## Keeping Your Package Fresh
+1. Push your branch and its changes to your GitHub fork using the `git push` command.
 
-### Bots to the Rescue:
+```bash
+git push origin feature/my-contribution
+```
 
-Conda Forge has these nifty bots that help update your package when there’s a new version. It’s mostly hands-off for you.
+## Step 7: Create the Pull Request
 
-### Making Big Changes:
+1. Go to the original repository on GitHub, click on 'Pull Requests', and then 'New Pull Request'.
+2. Select your branch from the list and fill in the PR details. Explain what you’ve added or changed.
 
-Got a major update or new feature? Here’s what to do:
+![Create Pull Request](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/create-pr.png)
 
-1. **Fork the Feedstock:** Your package will have its own feedstock repository. Fork it for major updates.
+## Step 8: Await Review
 
-2. **Create a Pull Request:** Make your changes in the fork and submit a pull request to the feedstock.
+1. After submitting the PR, wait for the maintainers to review and, if all looks good, merge it into the main project.
 
-3. **Wait for the Green Light:** Once your update passes all checks, it’ll be live!
+Throughout these steps, remember to follow any contribution guidelines set by the project. Here's a simplified Mermaid diagram to visualize the process:
 
-### Remember:
+```mermaid
+sequenceDiagram
+    participant You as You
+    participant GitHub as GitHub
+    You->>GitHub: Fork Repository
+    You->>GitHub: Clone, Edit, and Push Changes
+    GitHub->>GitHub: Open and Submit Pull Request
+    GitHub->>GitHub: PR Review and Merge
+```
 
-Don’t edit directly in the feedstock repo – always use forks and pull requests. This keeps things neat and avoids unnecessary builds.
-
-## Need More Help?
-
-Diving into documentation is super helpful. Check out [Conda Forge’s knowledge base](https://conda-forge.org/docs/) and [Conda Build’s documentation](https://docs.conda.io/projects/conda-build/en/latest/index.html). Stuck on something? The [Conda Forge Gitter channel](https://gitter.im/conda-forge/conda-forge.github.io) is a great place to ask questions and get help from the community.
-
-## And You’re Done!
-
-That’s it! You’ve just added your software to a huge library where thousands can find and use it. Pretty cool, right? Happy packaging, and welcome to the Conda Forge community! 🎉📦
+This flow ensures that your contributions are organized and properly integrated into the original project. Happy contributing!
