@@ -42,12 +42,10 @@ Gantt charts are useful for project timelines:
         Task2 : des2, after Task1, 2d
     ```
 
-## Pro Tips:
+## Pro Tips
 
 * **Comments**: Use `%` for comments in your Mermaid code for clarity and documentation.
 * **Styling**: Customize diagrams with CSS-like stylingto make them uniquely yours.
 * **Testing**: Always preview your Markdown in GitHub to check the diagram. You can use [Mermaid Live Editor](https://mermaid.live/) to check them in web browser.
 
 Mermaid diagrams add clarity and visual appeal to your GitHub repositories, making complex ideas easier to understand. Embrace the power of Mermaid to enhance your technical documentation and storytelling in your GitHub repositories. 
-
-Happy diagramming! 

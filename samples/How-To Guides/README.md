@@ -1,71 +1,69 @@
 # How to Create a Pull Request on GitHub
 
-Creating a Pull Request (PR) on GitHub is not just for coders; it's a valuable skill for anyone looking to contribute to open-source projects or showcase their work. Whether you're a developer or writer, this guide will walk you through the process of making a PR to share your contributions with the world.
+Creating a Pull Request (PR) on GitHub isn’t just for coders; It’s a valuable skill for anyone looking to contribute to open-source projects or showcase their work. Whether you’re a developer or author, this guide will guide you through the PR process to share your contributions with the world.
 
-## Step 1: Fork the Original Repository
+## Fork the Original Repository
 
-1. Go to the GitHub repository you want to contribute to.
-2. Click on the 'Fork' button at the top right corner. This action creates a copy of the repository in your own GitHub account.
+* Navigate to the GitHub repository you want to contribute.
+* Click on the ‘Fork’ button in the top right corner. This process creates a copy of the repository in your own GitHub account.
 
-![Fork Repository](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/fork-repo.png)
+![fork repository](https://docs.github.com/assets/cb-40742/mw-1440/images/help/repository/fork-button.webp)
 
-## Step 2: Clone Your Fork
+## Clone your swan
 
-1. Clone the forked repository to your local machine. This creates a local version that you can edit.
-2. Use the `git clone` command with your repository’s URL.
-
-```bash
-git clone https://github.com/YourUsername/repository-name.git
-```
-
-## Step 3: Branch Out
-
-1. Before making changes, create a new branch. Branches help keep your changes organized and separate from the main project.
-2. Use the `git checkout -b <your-branch-name>` command to create a new branch and switch to it.
+* Clone the forked repository to your local machine. This creates a local version that you can edit.
+* Run the `git clone` command with your repository URL.
 
 ```bash
-git checkout -b feature/my-contribution
+git clone https://github.com/yourusername/repository-name.git
 ```
 
-![Branch Out](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/create-branch.png)
+![Clone Repository](https://docs.github.com/property/cb-14601/mw-1440/images/help/repository/code-buttons.webp)
 
-## Step 4: Make Your Contributions
+## Branch out
 
-1. Now, it’s time to add your contributions. If you're a writer, you might be adding markdown files, documents, or other formats.
-2. Place your files in the appropriate directory in your local repository.
-
-![Make Contributions](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/add-contributions.png)
-
-## Step 5: Commit Your Changes
-
-1. After adding your work, commit these changes to your branch. This is like saving your progress.
-2. Use `git add` to stage your changes and `git commit -m "Your commit message"` to commit them.
+* Create a new branch before making changes. Branches help keep your changes organized and isolate you from the main business.
+* Use the `git checkout -b <your-branch-name>` command to create a new branch and switch to it.
 
 ```bash
-git add .
-git commit -m "Added my writing portfolio"
+git checkout -b feature/my-contributions
 ```
 
-## Step 6: Push to GitHub
+## Make your changes
 
-1. Push your branch and its changes to your GitHub fork using the `git push` command.
+* Now, it’s time to add your contribution. If you’re a writer, you’re probably adding markdown files, documents, or other formats, and if you are developer, you would like to make changes in the code files.
+* Put your files in the correct directory in your local repository.
+
+## Commit changes
+
+* After adding your work, commit these changes to your branch. This is like saving your progress.
+* Use `git add` to stage your changes and `git commit -m "Your commit message"` to commit.
 
 ```bash
-git push origin feature/my-contribution
+git in it
+git commit -m "Added my text section".
 ```
 
-## Step 7: Create the Pull Request
+## Push to GitHub
 
-1. Go to the original repository on GitHub, click on 'Pull Requests', and then 'New Pull Request'.
-2. Select your branch from the list and fill in the PR details. Explain what you’ve added or changed.
+Push your branch and its changes to your GitHub fork using the `git push` command.
 
-![Create Pull Request](https://github.com/OpenAI-Education/how-to-create-pull-request/blob/main/assets/create-pr.png)
+```bash
+git push origin feature/my-contributions
+```
 
-## Step 8: Await Review
+## Create a Pull Request
 
-1. After submitting the PR, wait for the maintainers to review and, if all looks good, merge it into the main project.
+* Go to the original repository on GitHub, click `Pull Request`, then click `Pull New Request`.
+* Select your branch from the list and fill in the PR information. Explain what you have added or changed.
 
-Throughout these steps, remember to follow any contribution guidelines set by the project. Here's a simplified Mermaid diagram to visualize the process:
+![Create Pull Request](https://docs.github.com/assets/cb-87213/mw-1440/images/help/pull_request/pull-request-analysis-change-branch.webp)
+
+## Wait for Review
+
+Submit a PR, wait for the reviewers to review it, and if all looks good, put it together for the main project.
+
+Throughout these steps, remember to follow any contribution guidelines set by the project. Here is a diagram to visualize the process:
 
 ```mermaid
 sequenceDiagram
@@ -77,4 +75,4 @@ sequenceDiagram
     GitHub->>GitHub: PR Review and Merge
 ```
 
-This flow ensures that your contributions are organized and properly integrated into the original project. Happy contributing!
+This flow ensures that your contributions are organized and properly integrated into the original project. 
