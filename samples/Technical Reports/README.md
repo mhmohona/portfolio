@@ -1,38 +1,89 @@
-These are detailed documents that explain the technology or process behind a product or feature. They should be well-researched and accurate, with clear explanations and diagrams where necessary.
+## Packaging `mwparserfromhell` for the Conda-Forge Collective
 
+My journey into the world of Conda packages began with a single aim: bring the `mwparserfromhell` library to the fingertips of the Python community through the conda-forge channel. This report recounts the technical steps and lessons learned, serving as a roadmap for fellow contributors and a testament to the power of open-source collaboration.
 
-# Building `mwparserfromhell` as a Conda Package for Conda-Forge: A Technical Report
+**Setting the Stage:**
 
-## Introduction
-This report details the process of developing a Conda package for the `mwparserfromhell` library, which is intended for distribution via the conda-forge channel. The goal is to provide a comprehensive guide for contributors to the conda-forge project, ensuring that the package is well-structured, reliable, and accessible to the broader community of Python developers.
+My trusty tools? Anaconda/Miniconda and `conda-build`, the conductor of this packaging symphony.
 
-## Environment Setup
-The development environment is set up using Anaconda or Miniconda, with `conda-build` being the primary tool for creating Conda packages.
+**Crafting Recipe:**
 
-```bash
-conda install conda-build
+With the `conda skeleton pypi mwparserfromhell` command, I laid the foundation – a dedicated `mwparserfromhell-feedstock` directory housing the initial recipe files. This blank canvas awaited my customizations.
+
+**Mastering `meta.yaml`:**
+
+Within the `meta.yaml` file, I meticulously defined the package's identity – name, version, and dependencies. This careful curation ensured seamless integration with conda and addressed potential compatibility roadblocks. After updating everything this is how my YML file looked like: 
+
+```yml
+{% set name = "mwparserfromhell" %}
+{% set version = "0.6.5" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 2bad0bff614576399e4470d6400ba29c52d595682a4b8de642afbb5bebf4a346
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - mwparserfromhell
+    - mwparserfromhell.nodes
+    - mwparserfromhell.nodes.extras
+    - mwparserfromhell.parser
+    - mwparserfromhell.smart_list
+    - mwparserfromhell.parser._tokenizer
+  requires:
+    - pip
+  commands:
+    - pip check
+
+about:
+  home: "https://github.com/earwig/mwparserfromhell"
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: "MWParserFromHell is a parser for MediaWiki wikicode."
+  doc_url: "https://mwparserfromhell.readthedocs.io/en/latest/"
+  dev_url: "https://github.com/earwig/mwparserfromhell"
+
+extra:
+  recipe-maintainers:
+    - earwig
+    - mhmohona
 ```
 
-## Recipe Creation
-A new directory named `mwparserfromhell-feedstock` is created to house the package recipe. Within this directory, the `conda skeleton pypi mwparserfromhell` command generates the initial recipe files from the Python Package Index (PyPI).
+**Local Testing**
 
-## Recipe Customization
-The `meta.yaml` file within the recipe directory is edited to specify package metadata such as the name, version, and dependencies. This step is critical for defining the build requirements and ensuring compatibility with the conda ecosystem.
+Before unleashing the package upon the world, I subjected it to rigorous local testing using `conda build .`. This vigilant examination unearthed any lurking build errors, preventing them from causing trouble downstream.
 
-## Local Testing
-Before submitting the package to conda-forge, local testing is performed using the `conda build .` command. Any build errors are addressed immediately to ensure the package builds successfully on a local machine.
+**Joining the Community**
 
-## GitHub Repository
-Once the package is ready for submission, a new repository is created under the conda-forge organization on GitHub. The contents of the local feedstock directory are pushed to this new repository.
+Following the conda-forge contribution guidelines, I submitted the package for review on their GitHub repository ([https://github.com/conda-forge/staged-recipes/pull/24068](https://github.com/conda-forge/staged-recipes/pull/24068)). The experienced maintainers provided invaluable feedback, ensuring the package met their high standards and aligned with community expectations. After incorporating their suggestions and addressing any issues raised, I was thrilled to see my pull request merged!
 
-## Submission to Conda-Forge
-According to conda-forge contribution guidelines, the package is submitted for review. The conda-forge team provides feedback on the package, ensuring it meets the standards and guidelines of the project.
+This marked a significant milestone, as it not only validated my efforts but also resulted in the official creation of the `mwparserfromhell-feedstock` repository: [https://github.com/conda-forge/mwparserfromhell-feedstock](https://github.com/conda-forge/mwparserfromhell-feedstock). This repository now houses the recipe files, build scripts, and documentation for the `mwparserfromhell` Conda package, ensuring its long-term sustainability and accessibility for the broader Python community.
 
-## Automated Testing and Continuous Integration
-To maintain the quality and reliability of the package, automated testing is integrated using services like GitHub Actions or Travis CI. These tools are configured to automatically build and test the package across different environments whenever changes are made to the repository.
 
-## Maintenance and Updates
-Ongoing maintenance is essential to keep the package updated with new releases of `mwparserfromhell` and to respond to issues raised by the community. This includes updating the feedstock to accommodate changes in dependencies and addressing any bugs or compatibility issues that arise.
+**Beyond Deployment**
 
-## Conclusion
-By following these steps, the `mwparserfromhell` library can be successfully packaged for conda-forge, providing a valuable resource for Python developers who require this functionality. This report serves as a record of the technical knowledge and skills applied throughout the process, demonstrating proficiency in Conda package development and contribution to open-source software projects.
+Maintenance became an ongoing commitment to keep the package in sync with `mwparserfromhell` releases and address user-reported issues. 
+
+**A Conclusion, but not an Ending:**
+
+Through this journey, the `mwparserfromhell` Conda package was born, offering a valuable asset to the Python community. This report captures the technical steps and skills applied, serving as a testament to my understanding of Conda package development and my dedication to contributing to open-source software projects.
+
+**But this is just the beginning.** The knowledge gained and the community connections forged pave the way for future contributions, ensuring that valuable tools like `mwparserfromhell` remain accessible to all.
