@@ -14,13 +14,14 @@ Each sample within the `samples` folder represents a different type of writing I
 - **Tutorials**: A tutorial on creating Mermaid diagrams in GitHub Markdown, a useful skill for visualizing workflows and data structures.
 
 
- [Medium](https://medium.com/@mhmohona)
+ <!-- [Medium](https://medium.com/@mhmohona) -->
 
+## Open Source Contribution 
 <!-- ## Google Season of Doc  -->
 
-## AsyncAPI Initiative 
+### AsyncAPI Initiative 
 
-### Documentation 
+#### Documentation 
 * [Adding channel](https://github.com/asyncapi/website/pull/2408)
 * [Dynamic channel](https://github.com/asyncapi/website/pull/2409) 
 * [Extending Specification](https://github.com/asyncapi/website/pull/2407) 
@@ -28,11 +29,11 @@ Each sample within the `samples` folder represents a different type of writing I
 * [Reuse with traits](https://github.com/asyncapi/website/pull/2411)
 * [Adding binding](https://github.com/asyncapi/website/pull/2042) 
 
-### Killercoda Tutorial 
+#### Killercoda Tutorial 
 * [AsyncAPI Specification Basic](https://github.com/asyncapi/learning-paths/pull/5)
 * [Create & Validate Document](https://github.com/asyncapi/learning-paths/pull/4)
 
-## WasmEdge Runtime
+### WasmEdge Runtime
 
 * [Plugin - Developer guide](https://github.com/WasmEdge/docs/pull/102) 
 * [Plugin - User guide](https://github.com/WasmEdge/docs/pull/146) 
@@ -45,7 +46,7 @@ Each sample within the `samples` folder represents a different type of writing I
 
 <!-- ## Season Of KDE  -->
 
-## Labplot
+### Labplot
 
 Newly Created pages - 
 
