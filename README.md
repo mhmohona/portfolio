@@ -1,7 +1,5 @@
 # Writing portfolio
 
-# mhmohona/Writing Portfolio
-
 Welcome to the Writing Portfolio repository! 
 
 Each sample within the `samples` folder represents a different type of writing I have done, ranging from API documentation to tutorials and case studies.
