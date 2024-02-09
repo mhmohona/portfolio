@@ -1,9 +1,22 @@
 # Writing portfolio
 
+# mhmohona/Writing Portfolio
+
+Welcome to the Writing Portfolio repository! 
+
+Each sample within the `samples` folder represents a different type of writing I have done, ranging from API documentation to tutorials and case studies.
+
+- **API Documentation**: An exploration of the Pywikibot API, detailing its functionality and usage.
+- **Case Studies**: A use case study on exploring Ubuntu, providing insights into its architecture and features.
+- **How-To Guides**: Step-by-step instructions on creating a pull request on GitHub, a common task for collaborating on open-source projects.
+- **Release Notes**: A guide to the new features and changes introduced from Rasa v2 to v3, ensuring users stay updated with the latest developments.
+- **Technical Reports**: A report on packaging `mwparserfromhell` for the Conda-Forge, showcasing the process of integrating third-party Python libraries into the Conda package manager.
+- **Tutorials**: A tutorial on creating Mermaid diagrams in GitHub Markdown, a useful skill for visualizing workflows and data structures.
+
 
  [Medium](https://medium.com/@mhmohona)
 
-## Google Season of Doc 
+<!-- ## Google Season of Doc  -->
 
 ## AsyncAPI Initiative 
 
@@ -30,7 +43,9 @@
 * [Community Page](https://github.com/WasmEdge/docs/pull/153)
 
 
-## Season Of KDE
+<!-- ## Season Of KDE  -->
+
+## Labplot
 
 Newly Created pages - 
 

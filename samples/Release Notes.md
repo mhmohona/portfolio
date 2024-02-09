@@ -1,4 +1,4 @@
-# Rasa v2 to v3 transition: Guide to new releases
+# Rasa v2 to v3: Guide to new releases
 
 Today we’re going to explore some exciting new features in the latest version of Rasa v3, an open-source machine learning platform that automates text and voice-based conversations Whether to dive deeper into chatbots, voice assistants, or just natural language processing, this blog post it will give you an insight into the upcoming changes and improvements to Rasa v3.
 
