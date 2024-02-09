@@ -9,7 +9,7 @@ Creating a Pull Request (PR) on GitHub isn’t just for coders; It’s a valuabl
 
 ![fork repository](https://docs.github.com/assets/cb-40742/mw-1440/images/help/repository/fork-button.webp)
 
-## Clone your swan
+## Clone your Repository
 
 * Clone the forked repository to your local machine. This creates a local version that you can edit.
 * Run the `git clone` command with your repository URL.
