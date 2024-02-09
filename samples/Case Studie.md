@@ -1,6 +1,6 @@
 # Use Case: Exploring Ubuntu
 
-Today, we are embarking on a thrilling adventure into the flexible realm of [Ubuntu](https://ubuntu.com/), one of the most famous flavors of Linux obtainable! Don't worry if you're new to the tech scene; we're going to guide you through the wonders of Ubuntu and show you just how superb it could be for all varieties of tasks. Let's dive in together!
+T[Ubuntu](https://ubuntu.com/) is one of the most famous flavors of Linux obtainable! Don't worry if you're new to the tech scene; we're going to guide you through the wonders of Ubuntu and show you just how superb it could be for all varieties of tasks. Let's dive in together!
 
 ## Computing Made Easy 
 
