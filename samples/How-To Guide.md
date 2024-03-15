@@ -1,6 +1,6 @@
 # How to Create a Pull Request on GitHub
 
-Creating a Pull Request (PR) on GitHub isn’t just for coders; It’s a valuable skill for anyone looking to contribute to open-source projects or showcase their work. Whether you’re a developer or author, this guide will guide you through the PR process to share your contributions with the world.
+Creating a Pull Request (PR) on GitHub isn’t just for coders; it’s a valuable skill for anyone looking to contribute to open-source projects or showcase their work. Whether you’re a developer or author, this guide will guide you through the PR process to share your contributions with the world.
 
 ## Fork the Original Repository
 

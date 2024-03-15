@@ -4,17 +4,17 @@ My journey into the world of Conda packages began with a single aim: bring the `
 
 ## Setting the Stage
 
-My trusty tools? Anaconda/Miniconda and `conda-build`, the conductor of this packaging symphony.
+My trusty tools? Anaconda/Miniconda and `conda-build`, the conductor of this packaging world.
 
 ## Crafting Recipe
 
-With the `conda skeleton pypi mwparserfromhell` command, I created the foundation – a dedicated `mwparserfromhell` directory housing the initial recipe file - `meta.yml`. 
+With the `conda skeleton pypi mwparserfromhell` command, I created the foundation – a dedicated `mwparserfromhell` directory containing the initial recipe file - `meta.yaml`. 
 
 ## Mastering `meta.yaml`
 
-Within the `meta.yaml` file, I defined the package's identity – name, version, dependencies and other necessary fields. After updating everything, and addressing reviewes from conda-forge maintainer this is how my YML file looked like: 
+Within the `meta.yaml` file, I defined the package's identity – name, version, dependencies and other necessary fields. After updating everything, and addressing reviewes from conda-forge maintainer this is how my YAML file looked like: 
 
-```yml
+```yaml
 {% set name = "mwparserfromhell" %}
 {% set version = "0.6.5" %}
 
@@ -69,7 +69,7 @@ extra:
 
 ## Local Testing
 
-Before unleashing the package upon the world, I tested it using `conda build .`. This command ran without build errors.
+Before releasing the package, I tested it using `conda build .`. This command ran without build errors.
 
 ## Joining the Community
 
