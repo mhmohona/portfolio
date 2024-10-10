@@ -2,19 +2,19 @@
 
 ## Introduction
 
-[Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot) is a dynamic Python library offering a suite of tools for automating tasks on MediaWiki sites. This guide provides detailed insights into the Pywikibot API, helping developers streamline their wiki-based operations.
+[Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot) is a dynamic Python library that provides resources for performing actions in MediaWiki websites. This guide serves to focus on and elaborate on the Pywikibot API, so that developers can optimize the work in wiki-based operations.
 
 ## Pywikibot: Understanding the API
 
-Pywikibot's API, directly linked with [MediaWiki](https://www.mediawiki.org/wiki/API:Main_page), facilitates automated tasks like content editing and data extraction using Python methods and classes.
+Pywikibot API is directly linked with [MediaWiki](https://www.mediawiki.org/wiki/API:Main_page), helps automated tasks like content editing and data extraction.
 
 **Key API Features:**
-- Interaction with MediaWiki's API endpoints.
-- Easy-to-use methods for tasks such as editing and uploading.
-- Custom bot creation and site management tools.
+- Calls of MediaWiki API.
+- Simple methods for editing or uploading content to the site.
+- Allowing to design a custom bot to manage a site.
 
 **API Use Cases:** 
-- Bulk updating and creating wiki pages.
+- Bulk updating and creating of wiki pages.
 - Extracting and analyzing data from wiki pages.
 - Managing user activities and site maintenance tasks.
 
